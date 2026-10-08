@@ -10,8 +10,6 @@ running = True
 while running:
     width = float(input("Enter width: "))
     height = float(input("Enter height: "))
-    areaValue = 0
-    perimeterValue = 0
 
     def isValid(w, h):
         totalValue = w + h
@@ -24,15 +22,21 @@ while running:
     if isValid(width, height) == False:
         print("This is an invalid rectangle.")
 
+    if isValid(width, height) == True:
+        print("This is a valid rectangle.")
+
     def area(w, h):
-        float(areaValue) = w * h
+        return w * h
 
     def perimeter(w, h):
-        float(perimeterValue) = 2 * (w + h)
+        return 2 * (w + h)
+
+    aV = area(width, height)
+    pV = perimeter(width, height)
 
     if isValid(width, height) == True:
-        print(f"The area is: {float(areaValue)}")
-        print(f"The perimeter is: {float(perimeterValue)}")
+        print(f"The area is: {aV}")
+        print(f"The perimeter is: {pV}")
 
     inA = input("Do you want to enter another width and height (Y/N)?: ")
 
@@ -40,3 +44,5 @@ while running:
         running = True
     elif inA == "N" or inA == "n":
         running = False
+
+print("Program Ends")
