@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8a4adb37-98a9-4246-a536-8a0cb079f393</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Assignment3C.py</StartupFile>
+    <StartupFile>Lab7A.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,6 +27,9 @@
     <Compile Include="Lab6C.py" />
     <Compile Include="Lab6B.py" />
     <Compile Include="Lab6A.py" />
+    <Compile Include="Lab7B.py" />
+    <Compile Include="Lab7A.py" />
+    <Compile Include="MyMath.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
